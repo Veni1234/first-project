@@ -1,0 +1,14 @@
+#! /bin/bash
+clear
+echo "please enter the supplier name: "
+read SUPNAME
+ls /home/suppliers/$SUPNAME !! mkdir
+/home/suppliers/$SUPNAME
+cd /home/suppliers/$SUPNAME
+echo "please enter date invoice is due (mm-dd-yyyy):"
+read DATE
+mkdir /home/suppliers/$DATE
+echo "please enter invoice number:"
+read INVNUM
+touch /home/suppliers/$INVNUM
+echo "Suppliers invoice file created."
